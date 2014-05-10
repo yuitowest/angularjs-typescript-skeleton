@@ -1,13 +1,13 @@
 module.exports = (grunt)->
-  pkg = grunt.file.readJSON 'package.json'
+  pkg = grunt.file.readJSON 'package.json'
 
   # load task module
-  for taskName of pkg.devDependencies
-    if taskName.substring(0,6) == 'grunt-'
-      grunt.loadNpmTasks taskName
+  for taskName of pkg.devDependencies
+    if taskName.substring(0,6) == 'grunt-'
+      grunt.loadNpmTasks taskName
 
   # task
-  grunt.initConfig
+  grunt.initConfig
 
     exec:
       tsCompile:
