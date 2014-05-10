@@ -1,0 +1,8 @@
+bower_components/
+build/
+components/
+dest/
+node_modules/
+public/vendor
+public/js/types/
+public/**/*.js
